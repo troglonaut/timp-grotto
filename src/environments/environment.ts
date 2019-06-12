@@ -3,9 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
-
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyDhoJUt5nJUdxRcwSEaOInWCFVTLfnJ0rg',
+    authDomain: 'timp-grotto.firebaseapp.com',
+    databaseURL: 'https://timp-grotto.firebaseio.com',
+    projectId: 'timp-grotto',
+    storageBucket: 'timp-grotto.appspot.com',
+    messagingSenderId: '629270756183',
+    appId: '1:629270756183:web:17c7471c2f3ce6c0'
+  }
+}
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
