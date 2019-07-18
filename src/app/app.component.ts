@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'timp-grotto';
+  trips: Observable<any[]>;
+  constructor (
+    db: AngularFirestore
+  ) {
+    this.trips = db.collection('trips').valueChanges();
+  }
 }
