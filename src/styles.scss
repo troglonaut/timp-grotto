@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/material/theming';
+
+
+$tg-app-primary: mat-palette($mat-indigo, 500);
+$tg-app-accent: mat-palette($mat-grey, 500, 300, 700);
+
+
+$tg-app-theme: mat-light-theme($tg-app-primary, $tg-app-accent);
+@include mat-core();
+@include angular-material-theme($tg-app-theme);
+
+@include mat-button-theme($tg-app-theme);
