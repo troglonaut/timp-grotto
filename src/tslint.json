@@ -10,8 +10,9 @@
         "component-selector": [
             true,
             "element",
-            "app",
+            "tg",
             "kebab-case"
-        ]
+        ],
+        "semicolon": [true, "never"]
     }
 }

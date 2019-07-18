@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { Component } from '@angular/core'
+import { AngularFirestore } from '@angular/fire/firestore'
+import { Observable } from 'rxjs'
 @Component({
-  selector: 'app-root',
+  selector: 'tg-app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'timp-grotto';
-  trips: Observable<any[]>;
+  title = 'timp-grotto'
+  trips: Observable<any[]>
   constructor (
     db: AngularFirestore
   ) {
-    this.trips = db.collection('trips').valueChanges();
+    this.trips = db.collection('trips').valueChanges()
   }
 }

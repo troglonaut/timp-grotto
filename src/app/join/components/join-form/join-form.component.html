@@ -1,0 +1,18 @@
+<form class="join-form" [formGroup]="joinForm">
+  <mat-form-field>
+    <input matInput type="text" placeholder="First name" required formControlName="firstName">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Last name" required formControlName="lastName">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Email address" required formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="password" placeholder="password" required formControlName="password">
+  </mat-form-field>
+  <button type="submit" [disabled]="!joinForm.valid">Join</button>
+</form>

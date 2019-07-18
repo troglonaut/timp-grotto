@@ -1,15 +1,21 @@
-import { MatButtonModule } from '@angular/material';
-import { NgModule } from "@angular/core";
-import { CommonModule } from '@angular/common';
+import { TGMaterialModule } from './material.module'
+import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core'
+import { ReactiveFormsModule } from '@angular/forms'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   imports: [
+    BrowserAnimationsModule,
     CommonModule,
-    MatButtonModule
+    ReactiveFormsModule,
+    TGMaterialModule
   ],
   exports: [
+    BrowserAnimationsModule,
     CommonModule,
-    MatButtonModule
+    ReactiveFormsModule,
+    TGMaterialModule
   ]
 })
 export class TGCommonModule { }
